@@ -1,0 +1,375 @@
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    background-color: white;
+    max-height: 4rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.before-logo {
+    text-align: end;
+    display: block;
+    max-width: 100%;
+    margin-right: 3rem;
+}
+
+.after-logo {
+    text-align: start;
+    display: block;
+    max-width: 100%;
+    margin-left: 3rem;
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Kulim Park';
+    color: black;
+}
+
+.header-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Kulim Park';
+    color: black;
+}
+
+.dropdown-header-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Kulim Park';
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-header-link svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.dropdown {
+    display: inline-block; 
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    min-width: 10rem;
+    z-index: 1;
+    font-family: 'Kulim Park';
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+}
+
+.dropdown-content a {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin-left: 1rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: start;
+}
+
+.dropdown-content a:hover {
+    color: darkgray;
+}
+
+.header-link:hover {
+    color: darkgray;
+}
+
+.dropdown-header-link:hover {
+    color: darkgray;
+    fill: darkgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    margin-left: 2rem;
+}
+
+.landing {
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landing img {
+    object-fit:cover;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.cv {
+    border: 0.1rem white solid;
+    background-color: transparent;
+    color: white;
+    font-family: 'Gothic A1';
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    min-height: 60%;
+    max-height: 100%;
+    padding-bottom: 0.3rem !important;
+    margin-top: 2rem;
+}
+
+.media iframe {
+    width:32rem;
+    min-height: 18rem;
+}
+
+.dark {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #373737;
+    color: white;
+    font-family: 'Kulim Park';
+}
+
+.dark .content {
+    margin-left: 9rem;
+    font-size: 1rem;
+    font-family: 'Gothic A1';
+    width: 100%;
+}
+
+.dark .content h1 {
+    font-size: 4rem;
+    margin-top: 3.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.dark .content .bio {
+    padding-right: 1rem;
+    line-height: 1.875rem;
+    max-width: 95%;
+    max-height: calc(100vh - 15.3rem);
+    font-weight: 200;
+    font-size: 1rem;
+    overflow:auto;
+    overflow-x: hidden;
+    padding-bottom: 0.3rem;
+}
+
+.dark .content ul {
+    line-height: 1.875rem;
+    max-width: 95%;
+    max-height: calc(100vh - 12rem);
+    font-weight: 200;
+    font-size: 1rem;
+    overflow:auto;
+    overflow-x: hidden;
+    padding-bottom: 0.3rem;
+}
+
+.dark .content ul .underline {
+    border-bottom: 1px white solid;
+}
+
+.dark .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dark .contact h1 {
+    font-size: 4rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    font-style: 'Kulim Park';
+}
+
+.dark .contact p {
+    display: block;
+    max-width: 70rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-family: 'Gothic A1';
+}
+
+.image-box {
+    min-width: 35%;
+    max-width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+}
+
+.image-box img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.beside {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.beside p {
+    font-size: 0.9rem;
+    
+}
+
+.award {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5rem;
+    border-bottom: 1px black solid;
+}
+
+.award p {
+    min-width: 15%;
+}
+
+.light {
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #d4d4d4;
+    font-family: 'Kulim Park';
+    color: black;
+}
+
+.light .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 9rem;
+    font-size: 1rem;
+    font-family: 'Gothic A1';
+    height: 100%;
+    width: 100%;
+}
+
+.light .content ul {
+    padding-top: 0;
+    line-height: 1.875rem;
+    max-width: 95%;
+    max-height: calc(100vh - 12rem);
+    font-weight: 200;
+    font-size: 1rem;
+    overflow:auto;
+    overflow-x: hidden;
+    padding-bottom: 0.3rem;
+    width: 100%;
+}
+
+.light .content h1 {
+    font-size: 4rem;
+    margin-top: 3.7rem;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+    margin-left:1rem;
+}
+
+.light .content h3 {
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.light .content ul {
+    margin-top: 0;
+}
+
+.light .content p {
+    margin-top: 0;
+}
+
+.repertoire {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #d4d4d4;
+}
+
+.contact {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+} */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    font-family: 'Kulim Park';
+}
+
+footer p {
+    padding: 0.2rem;
+    margin: 0rem;
+    font-size: 0.8rem;
+    font-family: 'Gothic A1';
+}
